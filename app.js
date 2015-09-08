@@ -3,7 +3,7 @@ var tessel = require('tessel'),
     camera = require('camera-vc0706').use(tessel.port['B']);
 
 var led1 = tessel.led[0].output(1); // yellow
-var led2 = tessel.led[1].output(1); // blue
+var led2 = tessel.led[1].output(0); // blue
 
 process.env.TESSEL_UPLOAD_DIR = './images';
 var startingNoiseLevel;
